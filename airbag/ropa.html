@@ -29,12 +29,16 @@
             <h2>filtros</h2>
             
             <form class="filto-form">
-                <label for="categoria">categoria:</label>
-                <select name="categoria" id="categoria">
-                    <option value="remeras">remeras</option>
-                    <option value="buzos">buzos</option>
-                    <option value="gorras">gorras</option>
-                </select>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        categoria:                    
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">remeras</a></li>
+                      <li><a class="dropdown-item" href="#">buzos</a></li>
+                      <li><a class="dropdown-item" href="#">gorras</a></li>
+                    </ul>
+                  </div>
             </form>
         </aside>
 
