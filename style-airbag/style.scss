@@ -17,45 +17,40 @@ header {
   height: 85px;
   padding: 5px 10%;
 
-  header.logo {
-  cursor: pointer;
+  .logo {
+    cursor: pointer;
   
-    header .logo img {
-    height: 70px;
-    width: auto;
+    img {
+      height: 70px;
+      width: auto;
+    } 
+  }
+}  
 
-      header .nav-links {
-      list-style: none;
 
-        header .nav-links li {
-        display: inline-block;
-        padding: 0 20px;
-   
+header .nav-links {
+  list-style: none;
 
-          header .nav-links a {
-          font-size: 700;
-          color: white;
-          text-decoration: none;
-          
-            header .btn button {
-            font-weight: 700;
-            color: #1c1b17;
-            padding: 9px 25px;
-            background: blueviolet;
-            border: none;
-            }
-          }
-        }
-      }
+  li {
+    display: inline-block;
+    padding: 0 20px;
+  
+    a {
+      font-size: 700;
+      color: white;
+      text-decoration: none;      
     }
   }
 }
+
+header .btn button {
+  font-weight: 700;
+  color: #1c1b17;
+  padding: 9px 25px;
+  background: blueviolet;
+  border: none;
+}
         
-      
-    
-  
-
-
 /* -----------------------main--------------------------------- */
 main {
   color: white;
@@ -65,13 +60,11 @@ main {
   margin: 0 auto;
   background-color: #1c1b17;
 
-
   img {
     text-align: center;
     display: flex;
     grid-template-columns: 1fr;
   
-
     h1 {
       color: white;
       text-decoration: underline;
@@ -82,43 +75,31 @@ main {
 /* --------------------index--------------------------------- */
 .carousel-inner :hover {
   transform: scale(1.05);
-  
-  .imagen-carousel {
-    width: 100%;
-    padding: 30px;
-
-    .carousel h5 {
-      color: white;
-      background-color: rgba(0, 0, 0, 0.719);
-      font-size: xx-large;
-
-      .carousel p {
-        color: white;
-        background-color: rgba(0, 0, 0, 0.719);
-        font-size: xx-large;
-
-        .carousel img {
-          width: 100%;
-          height: 700px;
-          display: flex;
-          justify-content: center;
-        }
-      }
-    }
-  }
 }
 
-/* -----------------contacto--------------------- */
-.redes img {
-  display: inline-block;
-  padding: 0 20px;
-  text-align: center;
-  height: 70px;
-  width: auto;
+.imagen-carousel{
+  width: 100%;
+  padding: 30px;
 }
 
-.redes a {
-  text-decoration: none;
+.carousel h5{ 
+  color:white;
+  background-color: rgba(0, 0, 0, 0.719);
+  font-size:xx-large;
+}
+
+.carousel p{ 
+  color:white;
+  background-color: rgba(0, 0, 0, 0.719);
+  font-size:xx-large;
+}
+
+.carousel img{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+
 }
 
 /* ----------------------productos------------------ */
@@ -165,35 +146,22 @@ h2 {
   width: 30%; /* Ajusta el tamaño de cada tarjeta */
   text-align: center;
   cursor: pointer;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+  
+    p {
+      font-size: 20px;
+      margin: 10px 0; /* Espaciado entre líneas */
+    }
+  }
 }
 
 .card-producto :hover {
   transform: scale(1.05);
-}
-
-.card-producto img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.card-producto p {
-  font-size: 20px;
-  margin: 10px 0; /* Espaciado entre líneas */
-}
-
-section {
-  text-align: left;
-}
-
-a {
-  color: blue;
-}
-
-.setlist {
-  display: inline-block;
-  text-align: left;
 }
 
 /*--------------------------- fecha------------------------- */
@@ -220,12 +188,12 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5px;
-}
 
-.foto-galeria img {
-  width: 500px;
-  height: 300px;
-  object-fit: cover;
+  img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+  }
 }
 
 .galeria h2 {
@@ -239,15 +207,12 @@ a {
   justify-content: center;
   gap: 20px;
   margin: 10px;
-}
 
-.canciones iframe {
-  width: 100%;
-  margin: 0px;
-}
 
-.listas-discos {
-  background-color: #1c1b17;
+  iframe {
+    width: 100%;
+    margin: 0px;
+  }
 }
 
 /* -----------------------------footer------------------------ */
@@ -259,34 +224,36 @@ footer {
   padding: 10px;
   margin: 10px;
   border: 5px white;
+
+  .redes-footer a {
+    display: inline-block;
+    padding: 0 20px;
+
+    img {
+      height: 40px;
+      width: auto;
+    }
+  }
 }
 
 .nav-ft ul {
   list-style: none;
   padding: 0;
   display: block;
+
+  li {
+    display: inline-block;
+    padding: 0 20px;
+
+    a {
+      font-size: 700;
+      color: white;
+      text-decoration: none;
+    }
+  }
 }
 
-.nav-ft ul li {
-  display: inline-block;
-  padding: 0 20px;
-}
 
-.nav-ft ul li a {
-  font-size: 700;
-  color: white;
-  text-decoration: none;
-}
-
-footer .redes-footer a {
-  display: inline-block;
-  padding: 0 20px;
-}
-
-.redes-footer img {
-  height: 40px;
-  width: auto;
-}
 
 /* -----------------------------mediaquery-----------------------------*/
 @media (max-width: 500px) {
