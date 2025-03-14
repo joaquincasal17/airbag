@@ -1,0 +1,39 @@
+@use 'navegador';
+
+
+
+/* -----------------------------footer------------------------ */
+
+footer {
+  @extend .navegador;
+    height: 70px;
+
+  .redes-footer a {
+    display: inline-block;
+    padding: 0 20px;
+  
+    img {
+      height: 40px;
+      width: auto;
+    }
+  }
+}
+  
+  .nav-ft ul {
+    list-style: none;
+    padding: 0;
+    display: block;
+  
+    li {
+      display: inline-block;
+      padding: 0 20px;
+  
+      a {
+        font-size: 700;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+  
+  

@@ -1,0 +1,6 @@
+@mixin parametros($heigth,$width,$margin,$padding){
+    height: $heigth;
+    width: $width;
+    margin: $margin;
+    padding: $padding;
+}

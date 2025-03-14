@@ -1,0 +1,41 @@
+@import './variables';
+@import './parametros';
+/* --------------------index--------------------------------- */
+.main-index{
+  background-color: $fondo;
+  @include parametros(none,none,none,5px);
+
+}
+.carousel-inner :hover {
+  transform: scale(1.05);
+}
+
+.imagen-carousel{
+  @include parametros(none,100%,none,30px);
+
+}
+
+.carousel h5{ 
+  color:white;
+  background-color: rgba(0, 0, 0, 0.719);
+  font-size:xx-large;
+}
+
+.carousel p{ 
+  color:white;
+  background-color: rgba(0, 0, 0, 0.719);
+  font-size:xx-large;
+}
+
+.carousel img{
+  @include parametros(700px,100%,0,0);
+  display: flex;
+  justify-content: center;
+
+}
+
+/* para que el carrousel cambie la imagen */
+
+.carousel-item {
+  transition: transform 1s ease-in-out;
+}

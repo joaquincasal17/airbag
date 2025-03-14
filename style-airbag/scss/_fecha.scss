@@ -1,0 +1,35 @@
+@import './variables';
+@import './parametros';
+/*--------------------------- fecha------------------------- */
+.dropdown {
+  background-color: $fondo;
+  padding: 10px;
+  @include parametros(none,none,10px,none);
+}
+
+.general {
+  background-color: $fondo;
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  @include parametros(none,none,10px,none);
+}
+
+.filtro {
+  @include parametros(none,none,none,5px);
+}
+
+.foto-galeria {
+  @include parametros(none,100%,20px,none);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+
+  img {
+    @include parametros(300px,500px,none,none);
+    object-fit: cover;
+  }
+}
+
+.galeria h2 {
+  text-align: center;
+}

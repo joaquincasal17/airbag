@@ -1,0 +1,61 @@
+@import './variables';
+@import './parametros';
+/* ----------------------productos------------------ */
+h2 {
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .main-ropa {
+    color: white;
+    display: grid;
+    grid-template-columns: 25% 1fr;
+  }
+  
+  .filtro-ropa {
+    background-color: $fondo;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .titulo-productos {
+    background-color: $fondo;
+    margin: 10px;
+  }
+  
+  .contenedor-productos {
+    background-color: $fondo;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    @include parametros(none,none,15px,40px);
+
+  }
+  
+  .card-producto {
+    background-color: rgb(100, 100, 100);
+    @include parametros(none,30%,none,5px);
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+  
+    img {
+      @include parametros(auto,100%,none,none);
+      object-fit: cover;
+      border-radius: 5px;
+    
+      p {
+        font-size: 20px;
+        margin: 10px 0; /* Espaciado entre líneas */
+      }
+    }
+  }
+  
+  .card-producto :hover {
+    transform: scale(1.05);
+  }

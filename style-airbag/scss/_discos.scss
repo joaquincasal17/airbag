@@ -1,0 +1,15 @@
+@import './variables';
+/* ------------------------------discos----------------------- */
+.canciones {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px;
+
+
+  iframe {
+    width: 100%;
+    margin: 0px;
+  }
+}
