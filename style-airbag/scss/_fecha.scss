@@ -1,6 +1,10 @@
 @import './variables';
 @import './parametros';
 /*--------------------------- fecha------------------------- */
+.main-fecha{
+  background-color: $fondo;
+  width: 90%;
+}
 .dropdown {
   background-color: $fondo;
   padding: 10px;
@@ -25,7 +29,7 @@
   gap: 5px;
 
   img {
-    @include parametros(300px,500px,none,none);
+    @include parametros(300px,600px,none,none);
     object-fit: cover;
   }
 }

@@ -214,6 +214,11 @@ h2 {
 
 /* background-color */
 /*--------------------------- fecha------------------------- */
+.main-fecha {
+  background-color: #1c1b17;
+  width: 90%;
+}
+
 .dropdown {
   background-color: #1c1b17;
   padding: 10px;
@@ -251,7 +256,7 @@ h2 {
 }
 .foto-galeria img {
   height: 300px;
-  width: 500px;
+  width: 600px;
   margin: none;
   padding: none;
   object-fit: cover;
