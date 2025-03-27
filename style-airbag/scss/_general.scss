@@ -1,0 +1,41 @@
+@import './variables';
+@import './parametros';
+
+body {
+    background-image: url(../images/background-show.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+  }
+  
+  
+  /* -----------------------main--------------------------------- */
+  main {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    width: 70%;
+    margin: 0 auto;
+    background-color: $fondo;
+  
+    img {
+      text-align: center;
+      display: flex;
+      grid-template-columns: 1fr;
+    
+      h1 {
+        color: white;
+        text-decoration: underline;
+        text-align: center;
+      }
+    }
+  }
+  

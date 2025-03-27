@@ -256,7 +256,7 @@ h2 {
 }
 .foto-galeria img {
   height: 300px;
-  width: 600px;
+  width: 500px;
   margin: none;
   padding: none;
   object-fit: cover;
@@ -283,6 +283,8 @@ h2 {
 /* -----------------------------footer------------------------ */
 footer {
   height: 70px;
+  text-align: center;
+  padding: 10px;
 }
 footer .redes-footer a {
   display: inline-block;
@@ -308,52 +310,8 @@ footer .redes-footer a img {
   text-decoration: none;
 }
 
-/* extend */
-/* variables */
 /* background-color */
-body {
-  background-image: url(../images/background-show.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-/* -----------------------main--------------------------------- */
-main {
-  color: white;
-  text-align: center;
-  font-size: 20px;
-  width: 70%;
-  margin: 0 auto;
-  background-color: #1c1b17;
-}
-main img {
-  text-align: center;
-  display: flex;
-  grid-template-columns: 1fr;
-}
-main img h1 {
-  color: white;
-  text-decoration: underline;
-  text-align: center;
-}
-
-/* -----------------------------mediaquery-----------------------------*/
 @media (max-width: 500px) {
-  /* header */
-  header {
-    flex-direction: column;
-    margin: 10px;
-    height: 200px;
-  }
-  header .nav-links li {
-    display: inline-block;
-    padding: 0 5px;
-  }
-  header .btn button {
-    margin: 5px;
-  }
-  /* main */
   main {
     font-size: 15px;
     width: 90%;
@@ -404,6 +362,94 @@ main img h1 {
     padding: 0 10px;
   }
 }
+@media screen and (max-width: 768px) {
+  header, .navegador, footer {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 10px;
+  }
+  .contenedor-productos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card-producto {
+    width: 90%;
+  }
+  .foto-galeria {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+button {
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+@media screen and (max-width: 600px) {
+  button {
+    font-size: 0.8rem;
+    padding: 8px 15px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .general {
+    grid-template-columns: 1fr;
+  }
+  .filtro {
+    order: 2;
+  }
+  .foto-galeria {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .foto-galeria {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* background-color */
+body {
+  background-image: url(../images/background-show.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+/* -----------------------main--------------------------------- */
+main {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  width: 70%;
+  margin: 0 auto;
+  background-color: #1c1b17;
+}
+main img {
+  text-align: center;
+  display: flex;
+  grid-template-columns: 1fr;
+}
+main img h1 {
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+}
+
+/* extend */
+/* variables */
+/* background-color */
 
 
 /*# sourceMappingURL=estilo.css.map */

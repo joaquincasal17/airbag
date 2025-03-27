@@ -1,0 +1,113 @@
+@import './variables';
+@import './parametros';
+
+@media (max-width: 500px) {
+    main {
+      font-size: 15px;
+      width: 90%;
+    }
+    main p {
+      margin: 15px;
+    }
+    img {
+      width: 100%;
+    }
+    .carousel img {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+    }
+    /*  fecha */
+    .general {
+      grid-template-columns: 1fr;
+    }
+    .foto-galeria {
+      width: 100%;
+      grid-template-columns: 1fr;
+      justify-content: center;
+    }
+    .foto-galeria img {
+      width: 350px;
+      height: 200px;
+    }
+    /* producto */
+    .main-ropa {
+      grid-template-columns: 1fr;
+    }
+    .card-producto {
+      width: 100%;
+    }
+    /* discos */
+    .canciones {
+      grid-template-columns: 1fr;
+    }
+    /* footer */
+    footer {
+      flex-direction: column;
+      margin: 10px;
+    }
+    .nav-ft ul li {
+      display: inline-block;
+      padding: 0 10px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    header, .navegador, footer {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 10px;
+    }
+  
+    .contenedor-productos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .card-producto {
+        width: 90%;
+    }
+  
+    .foto-galeria {
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    button {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .general {
+      grid-template-columns: 1fr;
+    }
+  
+    .filtro {
+      order: 2;
+    }
+  
+    .foto-galeria {
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .foto-galeria {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
